@@ -1,12 +1,12 @@
 import unittest
 
 import numpy as np
-from errors import E
+from pyerrors import E
 import operator
 
 np.set_printoptions(linewidth=120)
 
-class HistTest(unittest.TestCase):
+class ErrorsTest(unittest.TestCase):
 
     def setUp(self):
         self.v1 = E(10.0,1.0)
@@ -140,5 +140,4 @@ class HistTest(unittest.TestCase):
         self.assertEqual(sum(valist),E(100,10))
 
 if __name__ == "__main__":
-    v = E(10)
     unittest.main()
