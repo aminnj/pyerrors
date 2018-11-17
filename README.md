@@ -23,6 +23,6 @@ writing can eliminate the need for properly handling correlations. The unit test
 `pip install pyerrors==1.0.0`
 
 ### Testing
-`python tests.py`
+`python setup.py test`
 
 ### TODO

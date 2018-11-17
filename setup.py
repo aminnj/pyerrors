@@ -11,15 +11,15 @@ setup(
     version='1.0.0',
     description='Simply error propagation package',
     long_description=long_description,
-    long_description_content_type='text/markdown',
-    url='https://github.com/aminnj/pyerrors',  # Optional
+    url='https://github.com/aminnj/pyerrors',
     author='Nick Amin',
-    author_email='amin.nj@gmail.com',  # Optional
+    author_email='amin.nj@gmail.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2.7',
     ],
     py_modules=["pyerrors"],
+    test_suite="tests",
     install_requires=[],
 )
