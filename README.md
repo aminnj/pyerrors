@@ -11,12 +11,22 @@ writing can eliminate the need for properly handling correlations. The unit test
 6.66666666667 ± 4.42216638714
 >>> ((4.0*a-2*b)/3).round(2)
 6.67 ± 4.42
+>>> # unpack as a 2-tuple, or by index
 >>> v,e = E(10)
 >>> print v,e
 10.0 3.16227766017
->>> vs = sum([E(i) for i in range(10)])
->>> vs
+>>> # sum
+>>> print sum([E(i) for i in range(10)])
 45.0 ± 6.7082039325
+>>> # nice repr when using numpy inputs
+>>> import numpy as np
+>>> counts = np.histogram(np.random.normal(0,1,100),bins=np.linspace(-4,4,8))[0]
+>>> va = E(counts)
+>>> print va
+[ 0.00 ± 0.00    2.00 ± 1.41   21.00 ± 4.58   47.00 ± 6.86   27.00 ± 5.20    3.00 ± 1.73    0.00 ± 0.00]
+>>> # but numpy requires some coersion afterwards (see the relevant test case in `tests.py` for details)
+>>> print sum(va.to_list())
+100.0 ± 10.0
 ```
 
 ### Install
