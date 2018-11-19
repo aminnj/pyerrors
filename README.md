@@ -1,3 +1,7 @@
+## pyerrors
+
+[![PyPI version](https://badge.fury.io/py/pyerrors.svg)](https://badge.fury.io/py/pyerrors)
+
 ### Description
 
 This is a simple error propagation library that does not handle correlations. However, in most cases, clever
@@ -30,7 +34,7 @@ writing can eliminate the need for properly handling correlations. The unit test
 ```
 
 ### Install
-`pip install pyerrors==1.0.0`
+`pip install pyerrors`
 
 ### Testing
 `python setup.py test`

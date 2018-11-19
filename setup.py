@@ -8,8 +8,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='pyerrors',
-    version='1.0.0',
-    description='Simply error propagation package',
+    version='1.0.1',
+    description='Simple error propagation package',
     long_description=long_description,
     url='https://github.com/aminnj/pyerrors',
     author='Nick Amin',
